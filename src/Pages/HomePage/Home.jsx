@@ -112,6 +112,7 @@ const HomePage = () => {
                     offer="$115 (16% off)"
                     date="Offer Available Until March 2024"
                 />
+                <Footer />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/Categories" element={<CategoriesPage />} />

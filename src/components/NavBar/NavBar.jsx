@@ -1,13 +1,14 @@
 import "./NavBar.css";
 import CartWidget from "../CartWidget/CartWidget";
 
+
 const NavBar = () => {
     return (
         <nav className="NavBar">
-            <ul>
-                <li>Home</li>
-                <li>Categories</li>
-                <li>Contact</li>
+            <ul className="nav-ul">
+                <li className="li">Categories</li>
+                <li className="li">Contact</li>
+                <li className="li">Home</li>
                 <li className="Nav"><CartWidget /></li>
             </ul>
         </nav>
