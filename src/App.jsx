@@ -10,10 +10,8 @@ import UserCard from "./components/UserCard/UserCard";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
-// PAGES
-import HomePage from "./Pages/HomePage/Home"
-import CategoriesPage from "./Pages/CategoriesPage/Categories"
-import ContactPage from "./Pages/ContactPage/Contact"
+
+
 
 
 
@@ -126,7 +124,6 @@ class App extends React.Component {
             />
           </div>
         </div>
-        
       </Router>
     )
   }
