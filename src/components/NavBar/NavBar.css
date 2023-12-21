@@ -1,0 +1,50 @@
+/* NavBar.css */
+
+@keyframes pop {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.7);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.NavBar {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+ul li {
+    list-style: none;
+    /* Agregar animación "pop" y transición en el elemento li */
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+ul li:hover {
+    animation: pop 0.7s ease;
+}

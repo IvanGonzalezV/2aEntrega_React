@@ -1,0 +1,35 @@
+.ItemListContainer {
+    background-color: darkorange;
+    padding-top: 50px;
+}
+
+/* ItemListContainer.css */
+
+@keyframes colorChange {
+    0% {
+        background-color: darkorange;
+        color: black;
+    }
+
+    50% {
+        background-color: darkmagenta;
+        color: white;
+    }
+
+    100% {
+        background-color: darkorange;
+        color: black;
+    }
+}
+
+.ItemListContainer {
+    padding: 5px;
+    margin-top: 380px;
+    position: fixed;
+    z-index: 1;
+    animation: colorChange 1.2s infinite;
+}
+
+.ItemListContainer h2 {
+    margin: 0;
+}
