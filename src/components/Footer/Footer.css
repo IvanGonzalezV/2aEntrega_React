@@ -1,0 +1,43 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 97, 71);
+    width: 100%;
+    min-height: 16vh;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 0 190px;
+}
+
+.footer-container h2,
+.footer-container p {
+    color: rgb(156, 156, 156);
+    font-size: 16px;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.footer-container h2:hover,
+.footer-container p:hover,
+.footer-container a:hover {
+    color: greenyellow;
+}
+
+.footer-container p {
+    color: rgb(150, 150, 150);
+    font-size: 14px;
+    margin: 0;
+}
+
+a {
+    color: rgb(156, 156, 156);
+    transition: color 0.3s;
+}
