@@ -126,9 +126,7 @@ class App extends React.Component {
             />
           </div>
         </div>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
+        
       </Router>
     )
   }
