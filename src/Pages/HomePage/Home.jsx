@@ -1,19 +1,19 @@
 import React from "react";
 import UserCard from "../../components/UserCard/UserCard";
-import { Router, RouterOutlined } from "@mui/icons-material";
+
 
 // // REACT-ROUTER-DOM
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 // PAGES
 import HomePage from "../HomePage/Home"
-import Categories from "../CategoriesPage/Categories";
-import Contact from "../ContactPage/Contact";
+import CategoriesPage from "../CategoriesPage/Categories";
+import ContactPage from "../ContactPage/Contact";
 
 import { Route } from "react-router";
 
 <div>HomePage</div>
-const HomePage = () => {
+const HomePageComponent = () => {
     return (
         <Router>
             <div>
@@ -114,7 +114,7 @@ const HomePage = () => {
                 />
                 <Footer />
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/" element={<HomePageComponent />} />
                     <Route path="/Categories" element={<CategoriesPage />} />
                     <Route path="/Contact" element={<ContactPage />} />
                 </Routes>

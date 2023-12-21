@@ -1,9 +1,6 @@
 import React from "react";
 import "./App.css"
 
-// REACT-ROUTER-DOM
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-
 // COMPONENTS
 import Header from "./components/Header/Header";
 import UserCard from "./components/UserCard/UserCard";
