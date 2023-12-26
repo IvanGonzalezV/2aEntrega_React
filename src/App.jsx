@@ -15,9 +15,7 @@ import Footer from "./components/Footer/Footer";
 import HomePage from "./Pages/HomePage/Home";
 import CategoriesPage from "./Pages/CategoriesPage/Categories";
 import ContactPage from "./Pages/ContactPage/Contact";
-
-
-
+import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 
 // PROPS => strings, arrays, booleans, function, objects, todo tipo de datos
 const user1 = "Stereo Receiver & Amplifier"
@@ -128,6 +126,7 @@ class App extends React.Component {
             <Route path="/" element={<HomePage />} />
             <Route path="/Categories" element={<CategoriesPage />} />
             <Route path="/Contact" element={<ContactPage />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />
         </div>

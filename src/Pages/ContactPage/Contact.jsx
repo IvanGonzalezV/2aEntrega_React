@@ -1,8 +1,13 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
   return (
-    <div>Contact</div>
+    <div style={{ textAlign: "center" }}>
+      <h1>Contact Page</h1>
+      <button onClick={() => navigate("/")}>
+        Back to Home</button>
+    </div>
   )
 }
 
