@@ -11,7 +11,7 @@ const UserCard = (props) => {
                 <CardMedia
                     component="img"
                     image={props.img}
-                    alt="Comp_01"
+                    alt={props.name}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
@@ -20,7 +20,7 @@ const UserCard = (props) => {
                     <Typography variant="h6" color="text.secondary" component="div">
                         {props.offer}
                     </Typography>
-                    <div style={{ marginTop: "20px"}}>
+                    <div style={{ marginTop: "20px" }}>
                         <Typography
                             variant="caption"
                             color="text.secondary"
