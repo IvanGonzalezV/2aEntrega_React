@@ -1,5 +1,6 @@
 import React from "react";
 import UserCard from "../../components/UserCard/UserCard";
+import Footer from "../../components/Footer/Footer"
 
 
 // // REACT-ROUTER-DOM
@@ -10,9 +11,8 @@ import HomePage from "../HomePage/Home"
 import CategoriesPage from "../CategoriesPage/Categories";
 import ContactPage from "../ContactPage/Contact";
 
-import { Route } from "react-router-dom";
+// import { Route } from "react-router-dom";
 
-<div>HomePage</div>
 const HomePageComponent = () => {
     return (
         <div>
@@ -116,4 +116,4 @@ const HomePageComponent = () => {
     );
 };
 
-export default HomePage;
+export default HomePageComponent;

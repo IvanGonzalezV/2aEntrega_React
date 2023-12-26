@@ -12,6 +12,9 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import Footer from "./components/Footer/Footer";
 
 // PAGES
+import HomePage from "./Pages/HomePage/Home";
+// import CategoriesPage from "./Pages/CategoriesPage/Categories";
+// import ContactPage from "./Pages/ContactPage/Contact";
 
 
 
@@ -125,6 +128,9 @@ class App extends React.Component {
             />
           </div>
           <Footer />
+          <Routes>
+            <Route path="/" element={< HomePage/>}/>
+          </Routes>
         </div>
       </Router>
     )
