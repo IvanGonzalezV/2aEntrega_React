@@ -8,13 +8,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import UserCard from "./components/UserCard/UserCard";
 import NavBar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+// import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import Footer from "./components/Footer/Footer";
 
 // PAGES
 import HomePage from "./Pages/HomePage/Home";
-// import CategoriesPage from "./Pages/CategoriesPage/Categories";
-// import ContactPage from "./Pages/ContactPage/Contact";
+import CategoriesPage from "./Pages/CategoriesPage/Categories";
+import ContactPage from "./Pages/ContactPage/Contact";
 
 
 
@@ -38,15 +38,12 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
-
           <Header
             title=""
             subtitle=""
           />
-
           <NavBar />
-          <ItemListContainer />
-
+          {/* <ItemListContainer /> */}
           <div className="UserSectiona">
             <UserCard
               img="https://www.lifewire.com/thmb/-XzfSzwECtdVWm0dcHvrKaskquY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-182145942IvanWuPI-59270da13df78cbe7ef31ca8.jpg"
@@ -127,10 +124,12 @@ class App extends React.Component {
               date="Offer Avalible Until March 2024"
             />
           </div>
-          <Footer />
-          <Routes>
-            <Route path="/" element={< HomePage/>}/>
+          <Routes className="App">
+            <Route path="/" element={<HomePage />} />
+            <Route path="/Categories" element={<CategoriesPage />} />
+            <Route path="/Contact" element={<ContactPage />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
     )
