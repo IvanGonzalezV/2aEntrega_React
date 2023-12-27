@@ -43,7 +43,7 @@ class App extends React.Component {
 
           {/* con este mapeo cada fila de productos */}
           {rows.map((row, rowIndex) => (
-            <div key={rowIndex} className="UserSection">
+            <div key={rowIndex} className={rowIndex === 0 ? "UserSectionA" : "UserSection"}>
               {/* con este mapea cada producto en la fila */}
               {row.map((product) => (
                 <UserCard

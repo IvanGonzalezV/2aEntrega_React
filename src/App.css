@@ -35,10 +35,27 @@
   z-index: 999;
 }
 
+.UserSectionA {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 280px;
+  gap: 35px;
+}
+
 .UserSection {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 300px;
-  width: 100vh;
+  /* margin-top: 100px; */
+  margin-bottom: 100px;
+  gap: 35px;
 }
 
+.UserCard {
+  position: relative;
+}
+
+.UserCard img {
+  width: 100px;
+  height: 60px;
+  object-fit: fill;
+}
