@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
+import "./components/UserCard/UserCard.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import axios from "axios"; // Importa axios para hacer solicitudes HTTP
+import axios from "axios"; // Axios se utiliza para hacer solicitudes HTTP
 
 import Header from "./components/Header/Header";
 import UserCard from "./components/UserCard/UserCard";
@@ -16,12 +17,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: [], // Inicializa el estado con un array vacío
+      products: [], // Este es el que inicializara el estado con un array vacío
     };
   }
 
   componentDidMount() {
-    // Obtén datos de la API y actualiza el estado
+    // Este va a obtener datos de la API y ademas actualizara el estado
     axios.get("https://fakestoreapi.com/products").then((response) => {
       const products = response.data;
       this.setState({ products });
@@ -29,7 +30,7 @@ class App extends React.Component {
   }
 
   render() {
-    // Divide el array de productos en subconjuntos de 4 elementos
+    // Este lo ues para dividir el array de productos en subconjuntos de 4 elementos
     const rows = this.state.products.reduce((rows, product, index) => {
       return (index % 4 === 0 ? rows.push([product]) : rows[rows.length - 1].push(product)) && rows;
     }, []);
@@ -40,10 +41,10 @@ class App extends React.Component {
           <Header title="" subtitle="" />
           <NavBar />
 
-          {/* Mapea cada fila de productos */}
+          {/* con este mapeo cada fila de productos */}
           {rows.map((row, rowIndex) => (
             <div key={rowIndex} className="UserSection">
-              {/* Mapea cada producto en la fila */}
+              {/* con este mapea cada producto en la fila */}
               {row.map((product) => (
                 <UserCard
                   key={product.id}
